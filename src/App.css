@@ -1,0 +1,20 @@
+body{height: 7000px;}
+
+/* font-family: 'Playfair Display', serif; */
+
+.aside-data{
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 40px;
+    float: left;
+    width: 300px;
+    position: fixed;
+    overflow: scroll;
+    z-index: 1001;
+    background: #f2f3f7;
+    /* transition: 0.5s; */
+
+}
+/* .author-img{
+    background-image: url('/src/images/pic.jpg');
+} */
