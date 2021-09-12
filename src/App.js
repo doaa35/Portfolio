@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
 import SideBar from './component/SideBar';
+import Main from './component/Main';
+// import { Sidebar, SidebarItem } from 'react-responsive-sidebar';
+
 
 import { SOCIAL_ICONS } from './data/Social';
-import { IMG } from './data/Images';
 
 import './App.css';
 
@@ -13,16 +15,26 @@ class App extends Component{
     super(props);
     this.state={
       icons:SOCIAL_ICONS,
-      images:IMG
     }
   }
 
 
 render(){
  
+
+  // const items = [
+  //   <SidebarItem>Dashboard</SidebarItem>,
+  //   <SidebarItem>Profile</SidebarItem>,
+  //   <SidebarItem>Settings</SidebarItem>,
+  // ];
+
   return (
     <div>
-      <SideBar icons={this.state.icons} images={this.state.images} />
+      <SideBar icons={this.state.icons} />
+      <Main />
+{/* <Sidebar content={items}>
+  </Sidebar> */}
+
     </div>
      
     );
