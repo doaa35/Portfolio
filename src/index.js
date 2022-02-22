@@ -5,6 +5,8 @@ import "bootstrap/dist/js/bootstrap";
 import 'font-awesome/css/font-awesome.css'
 import './index.css';
 import App from './App';
+import './js/actions';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

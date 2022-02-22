@@ -1,30 +1,25 @@
-import React, { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { Component } from "react";
 
 import Introduction from "./Introducthion";
 import About from './About';
 import Work from "./RecentWork";
 import Tline from "./TimeLine";
 
-const Main = () =>{
-    useEffect(
-        ()=>{
-        AOS.init({duration:2000})
-    },[]);
+class Main extends Component{
 
-    return(
-        <div>
-            <Introduction />
-            <div data-aos='fade-right' data-aos-once="true" >
+    constructor(props){
+        super(props);
+    }
+    render() {
+        return (
+            <div className='main'>
+                <Introduction />
                 <About />
+                <Tline />
+                <Work />
             </div>
-            <Tline />
-            <Work />
-
-
-        </div>
-    )
+        );
+    }
 }
 
 export default Main;

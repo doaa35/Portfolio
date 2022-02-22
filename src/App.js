@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import SideBar from './component/SideBar';
 import Main from './component/Main';
-// import { Sidebar, SidebarItem } from 'react-responsive-sidebar';
-
 
 import { SOCIAL_ICONS } from './data/Social';
-
 import './App.css';
 
 class App extends Component{
@@ -21,21 +18,11 @@ class App extends Component{
 
 render(){
  
-
-  // const items = [
-  //   <SidebarItem>Dashboard</SidebarItem>,
-  //   <SidebarItem>Profile</SidebarItem>,
-  //   <SidebarItem>Settings</SidebarItem>,
-  // ];
-
   return (
-    <div>
-      <SideBar icons={this.state.icons} />
+    <Fragment>
+     <SideBar icons={this.state.icons} />
       <Main />
-{/* <Sidebar content={items}>
-  </Sidebar> */}
-
-    </div>
+    </Fragment>
      
     );
   

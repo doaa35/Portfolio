@@ -1,8 +1,8 @@
 
 /* start sideBar component */
 .author-img{
-    width: 140px;
-    height: 150px;
+    width: 11rem;
+    height: 14rem;
     border-radius: 50%;
 }
 
@@ -44,19 +44,16 @@
 
 .aside-data #main-menu ul li a:hover::after{transform: scale(1,1);} 
 
-.aside-data #main-menu ul li .active{color: #2c98f0;}
-.aside-data #main-menu ul li .active::after{transform:scale(1,1);}
+/* .aside-data #main-menu ul li .active{color: #2c98f0;} */
+/* .aside-data #main-menu ul li .active::after{transform:scale(1,1);} */
 /* animate the underline */
 
-/* .icon{
-  color: black;
-  font-size: 1.5rem;
+.icon{
   cursor: pointer;
   display: none;
-} */
-
-
-
+  margin: 1rem;
+}
+/* end sideBar component */
 
 
 /* start introduction component */
@@ -71,11 +68,10 @@
   color: black;
   font-family: 'Playfair Display', serif;
   font-size: 4.5rem;
-  margin-top: 24rem;
+  padding-top: 22rem;
   margin-left: 10rem;
 }
 /* end introduction component */
-
 
 
 /* start About and timeline components */
@@ -191,372 +187,112 @@ font-size: 80%;
 /* end recent work components */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .nav-toggle{
-    cursor: pointer;
-    text-decoration: none;
+/* responsive */
+@media (max-width: 768px) {
+
+/* sidebar */
+.aside-data{
+  padding-top: 0rem; 
+  position: absolute;
+  transform: translateX(-500px);
+  width: 12rem;
+  transition:  .5s all;
+  height: 54vh !important;
+    }
+
+.author-img {
+  width: 100px;
+  height: 100px;
+  }
+
+.aside-data h2{font-size: 1.4rem; margin-top: 1rem;}
+
+.aside-data p{font-size: .8rem;}
+.aside-data #main-menu{margin-top: 2rem !important;}
+
+.icon{
+  display: block;
+  transition: .5s;
+  }
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
 }
 
-.nav-toggle .active i::before, .nav-toggle .active i::after,
-.nav-toggle .dark .active i::before, .nav-toggle .dark .active i::after
-    { background: #000; }
+#check:checked~ .aside-data{transform: translateX(0px);}
+#check:checked~ .icon{transform: translateX(13rem);}
+/* sidebar */
 
-.nav-toggle:hover, .nav-toggle:focus, .nav-toggle:active {
-    outline: none;
-    border-bottom: none !important; 
-    }
-
-.nav-toggle i {
-    position: relative;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-    width: 30px;
-    height: 2px;
-    color: #000;
-    font: bold 14px;
-    text-transform: uppercase;
-    text-indent: -55px;
-    background: #000;
-    transition: all .2s ease-out; 
-    }
-
-.nav-toggle i::before, .nav-toggle i::after {
-    content: '';
-    width: 30px;
-    height: 2px;
-    background: #000;
-    position: absolute;
-    left: 0;
-    transition: 0.2s; 
-    }
-
-.nav-toggle .dark i {
-    position: relative;
-    color: #000;
-    background: #000;
-    transition: all .2s ease-out; 
-    }
-
-.nav-toggle .dark i::before, .nav-toggle .dark i::after {
-    background: #000;
-    transition: 0.2s; 
-    }
-
-.nav-toggle i::before {top: -7px; }
-    
-.nav-toggle i::after {bottom: -7px; }
-    
-.nav-toggle:hover i::before {top: -10px; }
-    
-.nav-toggle:hover i::after {bottom: -10px; }
-
-
-.nav-toggle .active i {background: transparent; }
-  
-.nav-toggle .active i::before {
-    top: 0; 
-    transform: rotateZ(45deg); 
-    }
-  
-.nav-toggle .active i::after {
-    bottom: 0;
-    transform: rotateZ(-45deg); 
-    }
-  
-.nav-toggle {
-    position: fixed;
-    left: -5px;
-    top: 0px;
-    z-index: 9999;
-    cursor: pointer;
-    opacity: 1;
-    visibility: hidden;
-    padding: 20px;
-    transition: 0.5s; 
-    }
- */
-
-
-    /* 
-
-        @media screen and (max-width: 768px) {
-          #main-menu {
-            width: 100%;
-            padding: 0 1em; } } */
-
-/* @media (max-width: 768px) {
-    .aside-data{
-      width: 250px;
-      left: -100%;
-      padding-top: 4em; 
-      position: absolute;
-
-       }} */
-/*     
-   .icon{
-      display: block;
-    } */
-
-
-    /* #check:checked ~ #aside-data{left: 0%;} */
-
-    
-
-
-/* end sideBar component */
-
-
-
-
-
-
-/* start expertise component */
-/* 
-#expertise{
-  margin-left: 21rem;
-  margin-top: 7rem;
-  margin-bottom: 5rem;
+/* header */
+#intro {
+  height: 22rem;
+  margin-right: 0rem;
 }
-.exp-card .e-1{margin-left: 15rem !important;}
+#intro .col-12{margin-left: -3rem;}
+#intro .styles_typicalWrapper__1_Uvh {
+  font-size: 2rem;
+  padding-top: 14rem;
+  margin-left: 0rem;
+    }
+/* header */
 
-.exp-card .exp{border:1px solid black; margin: .5rem;padding: 2rem;}
-
-.exp-card .exp .exp-icons .up,
-.exp-card .exp .exp-icons .down
-{font-size: 11rem;color: black;}
-
-.exp-card .exp .exp-icons .up{
-  top: -148px;
-  left: 35%;
-}
-.exp-card .exp .exp-icons .middle{
-  top: -32px;
-  left: 35%;
-  width: 6.3rem;
-  height: 2rem;
-  background-color: black;
+#tline{margin-left: 0rem;overflow: hidden;padding-left: 2rem;}
+#about{margin-left: 1.2rem;} 
+#work{margin-left: .2rem;margin-top: 6rem;}
+#about p:nth-of-type(2){
+  font-size: .8rem;
 }
 
-.exp-card .exp .exp-icons .down{top: 10;left: 50%;} */
+#tline .t-card-1,
+#tline .t-card-2,
+#tline .t-card-3, 
+#tline .t-card-end 
+{
+  position: absolute;
+  margin: 2rem;
+  border: 3px solid #d1d3da;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: -25px;
+  left: -92px;
+}
+
+#tline .t-card-1 .pen-1,
+#tline .t-card-2 .pen-2, 
+#tline .t-card-3 .pen-3
+{
+font-size: 1rem;
+}
+
+#tline .content .line-1, 
+#tline .content .line-2, 
+#tline .content .line-3 {
+  position: absolute;
+  width: .2rem;
+  top: 2.7rem;
+  left: -2rem;
+}
+#tline .content .line-1{height: 22rem;}
+#tline .content .line-2{height: 27rem;}
+#tline .content .line-3{height: 25rem;}
+
+#tline .ms{margin-left: 2rem;padding: .8rem;}
+
+#tline .pr-4 {font-size: 1.1rem;}
+
+.text-gray {display: block;margin-top: 0.5rem;}
+
+#tline .mt-4{font-size: .8rem;margin-top: 1rem!important;}
+
+#work .pic {width: 15rem;height: 8rem;}
+
+#work .overlay {width: 15rem;height: 8rem;}
+
+}
 
 
-/* #expertise .exp .exp-data{
-  margin-left: 20rem;
-  margin-top: 5rem;
-} */
-/* end expertise component */
+
+/* responsive */

@@ -1,25 +1,18 @@
 import React, {Component} from 'react';
 import pic from '../images/pic.jpg';
+// import { openNav, closeNav } from '../js/actions';
 
 class SideBar extends Component{
 
-    constructor(props){
-        super(props);
-        this.state={
-            show:false,
-        }
-    }
-
-    updateShow= () =>{
-        this.setState({show: !this.setState.show})
-    }
 
     render(){
 
         const social = this.props.icons.map( icon =>{
             return(
                 <ul key={icon.id} className='list-unstyled'>
-                    <a className='text-decorated-none text-dark position-relative' href={icon.path}><li className={icon.name}></li></a>
+                    <a className='text-decorated-none text-dark position-relative' href={icon.path}>
+                        <li className={icon.name}></li>
+                    </a>
                 </ul>
             )
             
@@ -31,20 +24,20 @@ class SideBar extends Component{
                         <li className='text-uppercase mt-3'><a href='#tline' className='position-relative text-decoration-none'>time line</a></li>
                         <li className='text-uppercase mt-3'><a href='#work' className='position-relative text-decoration-none'>recent work</a></li>
                       </ul>
-                            
-// console.log(this.props)
-   
+    
+    
     return(
 
-        <div>
-        {/* <nav href="#navbar" className="js-nav-toggle nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i /></nav> */}
-           
-           {/* toggle btn */}
-            
-            <span className='fa fa-bars icon float-left' onClick={this.updateShow}></span>
+        <div className='position-relative'>
+            {/* open nav btn */}
+            <input type="checkbox" className="checkbox d-none" id='check' />
+            <label className='icon float-left' htmlFor='check'>
+                <div className="bar1"></div>
+                <div className="bar2"></div>
+                <div className="bar3"></div>
+            </label>
 
             <aside className='aside-data float-left h-100' >
-            
                 <div className='text-center container pt-4'>
 
                     <div>
